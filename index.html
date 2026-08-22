@@ -4,42 +4,141 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Meridian Systems — Managed IT Support, Cloud &amp; Cybersecurity</title>
-  <meta name="description" content="Meridian Systems provides managed IT support, cloud migration, cybersecurity and network infrastructure for mid-sized organisations across the UK and EU.">
-  <meta name="theme-color" content="#16181A">
+  <title>Wildcrew — Small-Group Outdoor Adventure Weekends</title>
+  <meta name="description" content="Wildcrew runs guided hiking, surf, climbing, kayaking and wild camping weekends across the UK and Europe. 12 people max, gear included, no experience needed.">
+  <meta name="theme-color" content="#FEF9F4">
+  <link rel="canonical" href="https://vinsonong.github.io/Curious-Guy/">
 
-  <!-- Open Graph -->
+  <!-- Content Security Policy. GitHub Pages serves static files and cannot set
+       response headers, so this meta element is the only place to declare one.
+       It allowlists exactly the third parties this page uses and nothing else.
+
+       connect-src lists the form endpoints — when you swap the example.com
+       placeholders in script.js for a real endpoint, add its origin here too
+       or the fetch will be blocked.
+
+       Note: frame-ancestors and X-Frame-Options cannot be set from a meta tag.
+       To stop the page being framed you need real headers (a CDN or a host
+       that supports them). -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    base-uri 'none';
+    object-src 'none';
+    script-src 'self';
+    style-src 'self' https://fonts.googleapis.com;
+    font-src https://fonts.gstatic.com;
+    img-src 'self' data: https://images.unsplash.com;
+    connect-src 'self' https://example.com;
+    form-action 'none';
+    frame-src 'none'">
+
+  <!-- Open Graph / Twitter. og:image points at the hero photo cropped to 1200x630. -->
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Meridian Systems">
-  <meta property="og:title" content="Meridian Systems — Managed IT Support, Cloud &amp; Cybersecurity">
-  <meta property="og:description" content="Managed IT support, cloud migration, cybersecurity and network infrastructure for mid-sized organisations across the UK and EU.">
-  <meta property="og:url" content="https://www.meridiansystems.example/">
+  <meta property="og:site_name" content="Wildcrew">
+  <meta property="og:title" content="Wildcrew — Small-Group Outdoor Adventure Weekends">
+  <meta property="og:description" content="Guided hiking, surf, climbing, kayaking and wild camping weekends across the UK and Europe. Twelve people max, gear included, no experience needed.">
+  <meta property="og:url" content="https://vinsonong.github.io/Curious-Guy/">
   <meta property="og:locale" content="en_GB">
-  <!-- og:image needs an absolute URL to a hosted 1200x630 image. This build ships
-       no external image files, so add one when the site is deployed, e.g.:
-       <meta property="og:image" content="https://www.meridiansystems.example/og.png">
-       <meta property="og:image:alt" content="Meridian Systems logo on a charcoal background"> -->
+  <meta property="og:image" content="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=70">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Sunrise turning a range of mountain peaks pink above a still turquoise lake">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Preconnect to the image CDN too: the hero photo is the LCP element. -->
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400..700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Inline SVG favicon: a Wildcrew trail patch. Keeps the "no image files" rule. -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%231E2D36'/%3E%3Cpath d='M6 21l6-9 4 5.5 2.5-3.5L26 21z' fill='%23C9E9D5'/%3E%3Ccircle cx='22' cy='10' r='2.6' fill='%23FCE9C4'/%3E%3C/svg%3E">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://vinsonong.github.io/Curious-Guy/#org",
+        "name": "Wildcrew",
+        "url": "https://vinsonong.github.io/Curious-Guy/",
+        "description": "Small-group outdoor adventure weekends across the UK and Europe.",
+        "email": "hey@wildcrew.example",
+        "telephone": "+44 20 7946 0958",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Unit 7, Bridgewater Yard",
+          "addressLocality": "Sheffield",
+          "postalCode": "S1 2GU",
+          "addressCountry": "GB"
+        },
+        "areaServed": ["GB", "EU"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://vinsonong.github.io/Curious-Guy/#website",
+        "url": "https://vinsonong.github.io/Curious-Guy/",
+        "name": "Wildcrew",
+        "publisher": { "@id": "https://vinsonong.github.io/Curious-Guy/#org" },
+        "inLanguage": "en-GB"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://vinsonong.github.io/Curious-Guy/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do I need experience to join a Wildcrew trip?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Every trip is graded from 1 to 5 and grades 1 and 2 assume you have never done the activity before. Your guide teaches the skills on the day."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What gear is included?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "All technical and safety kit is included: wetsuits, boards, ropes, harnesses, helmets, kayaks, buoyancy aids and group camping equipment. You bring clothes, boots and a sleeping bag."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I book on my own?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most people do. Roughly seven in ten of our bookings are solo, and trips cap at twelve so the group actually gets to know each other."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the cancellation policy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cancel up to 14 days before departure for a full refund, no questions asked. Inside 14 days you can move your place to another date or pass it to a friend."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header" id="site-header">
     <div class="container nav">
-      <a class="nav__logo" href="#hero" aria-label="Meridian Systems — home">
+      <a class="nav__logo" href="#hero" aria-label="Wildcrew — home">
         <svg class="nav__mark" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false">
-          <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".35"/>
-          <path d="M16 2c5 4.2 7.5 9 7.5 14S21 26 16 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <path d="M16 2c-5 4.2-7.5 9-7.5 14S11 26 16 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".45"/>
-          <circle cx="16" cy="16" r="2.6" fill="currentColor"/>
+          <circle cx="16" cy="16" r="14.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="2.4 2.4" opacity=".45"/>
+          <path d="M6.5 21.5 12.2 12l3.9 5.6 2.6-3.7 6.8 7.6z" fill="currentColor"/>
+          <circle cx="21.6" cy="10.2" r="2.5" fill="currentColor" opacity=".55"/>
         </svg>
-        <span class="nav__wordmark">Meridian<span class="nav__wordmark-thin">Systems</span></span>
+        <span class="nav__wordmark">Wild<span class="nav__wordmark-thin">crew</span></span>
       </a>
 
       <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">
@@ -48,10 +147,11 @@
 
       <nav class="nav__panel" id="primary-nav" aria-label="Primary">
         <ul class="nav__list">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#testimonials">Clients</a></li>
-          <li><a href="#enquiry">Contact</a></li>
-          <li><a class="btn btn--primary btn--sm nav__cta" href="#enquiry">Get a Quote</a></li>
+          <li><a href="#trips">Trips</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#stories">Stories</a></li>
+          <li><a class="btn btn--primary btn--sm nav__cta" href="#enquiry">Book a trip</a></li>
         </ul>
       </nav>
     </div>
@@ -61,153 +161,334 @@
 
     <!-- ── 1. Hero ───────────────────────────────────────────────────────── -->
     <section class="hero" id="hero" aria-labelledby="hero-title">
-      <div class="container hero__inner">
-        <p class="hero__eyebrow">Managed IT for mid-sized organisations</p>
-        <h1 class="hero__title" id="hero-title">IT that stays out of your way</h1>
-        <p class="hero__sub">We look after the systems your business runs on — support, cloud, security and networks — so your team can get on with the work.</p>
+      <div class="hero__media">
+        <img
+          class="hero__img"
+          src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&amp;fit=crop&amp;w=1600&amp;q=70"
+          srcset="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&amp;fit=crop&amp;w=800&amp;q=65 800w,
+                  https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&amp;fit=crop&amp;w=1200&amp;q=68 1200w,
+                  https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&amp;fit=crop&amp;w=1900&amp;q=70 1900w"
+          sizes="100vw"
+          width="1900" height="1267"
+          alt="Sunrise turning a range of jagged mountain peaks pink above a still turquoise lake"
+          fetchpriority="high" decoding="async">
+        <span class="hero__veil" aria-hidden="true"></span>
+      </div>
 
-        <div class="hero__actions">
-          <a class="btn btn--primary btn--lg" href="#enquiry">Get a Free Consultation</a>
-          <a class="btn btn--ghost btn--lg" href="#services">Our Services</a>
+      <div class="container hero__inner">
+        <!-- The copy sits on a solid panel rather than straight on the photo:
+             a pasted-on poster label, and the only way to guarantee AA
+             contrast over an image whose tones we do not control. -->
+        <div class="hero__panel">
+          <p class="hero__eyebrow">Small-group trips · UK &amp; Europe</p>
+          <h1 class="hero__title" id="hero-title">Big weekends,<br><span class="hero__title-accent">small crews</span></h1>
+          <p class="hero__sub">Guided hikes, surf, climbs and paddles you can book on a Tuesday and be on by Friday. Twelve people max, all the kit sorted, no experience needed.</p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#trips">Find a trip</a>
+            <a class="btn btn--ghost btn--lg" href="#how">How it works</a>
+          </div>
         </div>
 
-        <ul class="hero__trust">
-          <li>24/7 monitoring</li>
-          <li>UK &amp; EU coverage</li>
-          <li>ISO 27001 aligned</li>
-          <li>15-minute response SLA</li>
-        </ul>
+        <!-- The signature patch: a sew-on trail badge overlapping the panel's
+             corner the way a real patch overlaps a seam. -->
+        <p class="patch patch--hero" aria-hidden="true">
+          <span class="patch__top">Est. 2019</span>
+          <span class="patch__big">12</span>
+          <span class="patch__bot">people max</span>
+        </p>
       </div>
-      <a class="hero__scroll" href="#services" aria-label="Scroll to services">
+
+      <a class="hero__scroll" href="#trips" aria-label="Scroll to trips">
         <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
           <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </a>
     </section>
 
-    <!-- ── 2. Services ───────────────────────────────────────────────────── -->
-    <section class="section" id="services" aria-labelledby="services-title">
+    <!-- ── 2. Trust ticker ───────────────────────────────────────────────── -->
+    <div class="ticker">
+      <div class="container">
+        <ul class="ticker__list">
+          <li>Gear included</li>
+          <li>Qualified guides</li>
+          <li>No experience needed</li>
+          <li>Free cancellation to 14 days</li>
+          <li>7 in 10 book solo</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ── 3. Trips ──────────────────────────────────────────────────────── -->
+    <section class="section" id="trips" aria-labelledby="trips-title">
       <div class="container">
         <div class="section__head reveal">
-          <p class="section__eyebrow">What we do</p>
-          <h2 class="section__title" id="services-title">Four services, one accountable team</h2>
-          <p class="section__lede">No handoffs between vendors. The engineers who design your environment are the ones who answer the phone.</p>
+          <p class="section__eyebrow">Where we go</p>
+          <h2 class="section__title" id="trips-title">Six ways to spend a weekend</h2>
+          <p class="section__lede">Every trip runs Friday evening to Sunday afternoon. Pick the one that sounds good and we'll handle transport, kit, food and the bit where someone has to read the map.</p>
         </div>
 
-        <ul class="cards">
-          <li class="card reveal">
-            <span class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="26" height="26" focusable="false">
-                <path d="M4 13a8 8 0 0 1 16 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                <rect x="2.5" y="13" width="4" height="6.5" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.8"/>
-                <rect x="17.5" y="13" width="4" height="6.5" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.8"/>
-                <path d="M19.5 19.5a3 3 0 0 1-3 3H13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-              </svg>
-            </span>
-            <h3 class="card__title">Managed IT Support</h3>
-            <p class="card__text">A named service desk that knows your setup, with proactive patching and monitoring behind it. Most tickets are resolved on first contact.</p>
+        <ul class="trips">
+          <li class="trip reveal">
+            <div class="trip__media">
+              <img class="trip__img"
+                src="https://images.unsplash.com/photo-1501554728187-ce583db33af7?auto=format&amp;fit=crop&amp;w=800&amp;q=68"
+                srcset="https://images.unsplash.com/photo-1501554728187-ce583db33af7?auto=format&amp;fit=crop&amp;w=560&amp;q=65 560w,
+                        https://images.unsplash.com/photo-1501554728187-ce583db33af7?auto=format&amp;fit=crop&amp;w=900&amp;q=68 900w"
+                sizes="(min-width: 768px) 44vw, 92vw"
+                width="900" height="675" loading="lazy" decoding="async"
+                alt="Two hikers with backpacks stopped on a green alpine ridge, looking across the valley">
+            </div>
+            <div class="trip__body">
+              <h3 class="trip__title">Ridge Hikes</h3>
+              <p class="trip__where">Snowdonia · Lake District · Peak District</p>
+              <p class="trip__text">Long days on high ground with a proper pub at the end. The classic starting point if you have never done a guided weekend before.</p>
+              <p class="trip__stats"><span>18–24 km</span><span>Grade 2</span><span>from £189</span></p>
+            </div>
           </li>
 
-          <li class="card reveal">
-            <span class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="26" height="26" focusable="false">
-                <path d="M7.5 18.5h9.2a3.8 3.8 0 0 0 .5-7.57 5.6 5.6 0 0 0-10.83-1.3A4.1 4.1 0 0 0 7.5 18.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                <path d="M12 15.5V8.8m0 0-2.4 2.4M12 8.8l2.4 2.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </span>
-            <h3 class="card__title">Cloud Migration</h3>
-            <p class="card__text">Staged moves to Azure, AWS or Microsoft 365 with a tested rollback at every step. We plan around your busy periods, not ours.</p>
+          <li class="trip reveal">
+            <div class="trip__media">
+              <img class="trip__img"
+                src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&amp;fit=crop&amp;w=800&amp;q=68"
+                srcset="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&amp;fit=crop&amp;w=560&amp;q=65 560w,
+                        https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&amp;fit=crop&amp;w=900&amp;q=68 900w"
+                sizes="(min-width: 768px) 44vw, 92vw"
+                width="900" height="675" loading="lazy" decoding="async"
+                alt="A surfer riding inside the curl of a bright turquoise wave">
+            </div>
+            <div class="trip__body">
+              <h3 class="trip__title">Surf Weekends</h3>
+              <p class="trip__where">North Devon · Pembrokeshire</p>
+              <p class="trip__text">Two days of coaching in waist-high whitewater, a van full of boards, and a fire on the beach once the light goes.</p>
+              <p class="trip__stats"><span>6 hrs coaching</span><span>Grade 1</span><span>from £215</span></p>
+            </div>
           </li>
 
-          <li class="card reveal">
-            <span class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="26" height="26" focusable="false">
-                <path d="M12 2.8l7.2 2.8v6.1c0 4.3-2.9 8.2-7.2 9.5-4.3-1.3-7.2-5.2-7.2-9.5V5.6L12 2.8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                <path d="M8.8 12.1l2.3 2.3 4.1-4.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </span>
-            <h3 class="card__title">Cybersecurity</h3>
-            <p class="card__text">Endpoint protection, MFA rollout, phishing simulations and an incident response plan you have actually rehearsed.</p>
+          <li class="trip reveal">
+            <div class="trip__media">
+              <img class="trip__img"
+                src="https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&amp;fit=crop&amp;w=800&amp;q=68"
+                srcset="https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&amp;fit=crop&amp;w=560&amp;q=65 560w,
+                        https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&amp;fit=crop&amp;w=900&amp;q=68 900w"
+                sizes="(min-width: 768px) 44vw, 92vw"
+                width="900" height="675" loading="lazy" decoding="async"
+                alt="A climber hanging from a steep overhanging rock face high above the sea">
+            </div>
+            <div class="trip__body">
+              <h3 class="trip__title">Rock &amp; Rope</h3>
+              <p class="trip__where">Peak District · Portland</p>
+              <p class="trip__text">Learn to belay, lead your first route, and find out that your forearms are the weak link. Ropes, harness and helmet provided.</p>
+              <p class="trip__stats"><span>8 routes</span><span>Grade 3</span><span>from £229</span></p>
+            </div>
           </li>
 
-          <li class="card reveal">
-            <span class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="26" height="26" focusable="false">
-                <circle cx="12" cy="4.6" r="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/>
-                <circle cx="4.8" cy="19" r="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/>
-                <circle cx="19.2" cy="19" r="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/>
-                <path d="M12 7v4.2m0 0L6 16.9m6-5.7 6 5.7M7.2 19h9.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-              </svg>
-            </span>
-            <h3 class="card__title">Network Infrastructure</h3>
-            <p class="card__text">Structured cabling, switching, firewalls and site-to-site links, documented so the next engineer isn't guessing.</p>
+          <li class="trip reveal">
+            <div class="trip__media">
+              <img class="trip__img"
+                src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=68"
+                srcset="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=560&amp;q=65 560w,
+                        https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=900&amp;q=68 900w"
+                sizes="(min-width: 768px) 44vw, 92vw"
+                width="900" height="675" loading="lazy" decoding="async"
+                alt="View over the bow of a wooden boat crossing a glassy green mountain lake">
+            </div>
+            <div class="trip__body">
+              <h3 class="trip__title">Sea Kayaking</h3>
+              <p class="trip__where">Anglesey · Scottish west coast</p>
+              <p class="trip__text">Flat-water skills on Saturday, a proper coastal crossing on Sunday. Seals turn up more often than not.</p>
+              <p class="trip__stats"><span>22 km paddle</span><span>Grade 2</span><span>from £199</span></p>
+            </div>
+          </li>
+
+          <li class="trip reveal">
+            <div class="trip__media">
+              <img class="trip__img"
+                src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&amp;fit=crop&amp;w=800&amp;q=68"
+                srcset="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&amp;fit=crop&amp;w=560&amp;q=65 560w,
+                        https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&amp;fit=crop&amp;w=900&amp;q=68 900w"
+                sizes="(min-width: 768px) 44vw, 92vw"
+                width="900" height="675" loading="lazy" decoding="async"
+                alt="Looking out of an open tent door onto a sunlit forest clearing">
+            </div>
+            <div class="trip__body">
+              <h3 class="trip__title">Wild Camping</h3>
+              <p class="trip__where">Cairngorms · Dartmoor</p>
+              <p class="trip__text">Walk in, pitch up somewhere with no phone signal, cook badly over a stove, and watch the sky do its thing.</p>
+              <p class="trip__stats"><span>2 nights</span><span>Grade 2</span><span>from £165</span></p>
+            </div>
+          </li>
+
+          <li class="trip reveal">
+            <div class="trip__media">
+              <img class="trip__img"
+                src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&amp;fit=crop&amp;w=800&amp;q=68"
+                srcset="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&amp;fit=crop&amp;w=560&amp;q=65 560w,
+                        https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&amp;fit=crop&amp;w=900&amp;q=68 900w"
+                sizes="(min-width: 768px) 44vw, 92vw"
+                width="900" height="675" loading="lazy" decoding="async"
+                alt="A trekker with a large red rucksack walking a stony path towards snow-capped mountains">
+            </div>
+            <div class="trip__body">
+              <h3 class="trip__title">Alpine Trekking</h3>
+              <p class="trip__where">Dolomites · Picos de Europa</p>
+              <p class="trip__text">Our one long-haul format: four days hut to hut, bags carried between stops, altitude gentle enough to enjoy it.</p>
+              <p class="trip__stats"><span>4 days</span><span>Grade 4</span><span>from £640</span></p>
+            </div>
           </li>
         </ul>
       </div>
     </section>
 
-    <!-- ── 3. Testimonials ───────────────────────────────────────────────── -->
-    <section class="section section--alt" id="testimonials" aria-labelledby="testimonials-title">
+    <!-- ── 4. How it works ───────────────────────────────────────────────── -->
+    <!-- Numbered because this genuinely is a sequence: each step depends on
+         the one before it. -->
+    <section class="section section--mint" id="how" aria-labelledby="how-title">
       <div class="container">
         <div class="section__head reveal">
-          <p class="section__eyebrow">Clients</p>
-          <h2 class="section__title" id="testimonials-title">What it's like to work with us</h2>
+          <p class="section__eyebrow">How it works</p>
+          <h2 class="section__title" id="how-title">Three steps, then you're out</h2>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num" aria-hidden="true">01</span>
+            <h3 class="step__title">Pick a weekend</h3>
+            <p class="step__text">Tell us the trip and roughly when. We'll send back the two or three dates that still have space.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num" aria-hidden="true">02</span>
+            <h3 class="step__title">We sort the rest</h3>
+            <p class="step__text">Guides, kit, transport from the nearest station, campsite or bunkhouse, and a kit list that fits on one page.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num" aria-hidden="true">03</span>
+            <h3 class="step__title">Show up</h3>
+            <p class="step__text">Bring boots and a sleeping bag. Meet eleven people who also had nothing on this weekend.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ── 5. Gallery ────────────────────────────────────────────────────── -->
+    <section class="section" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">From the group chat</p>
+          <h2 class="section__title" id="gallery-title">Last season, roughly</h2>
+          <p class="section__lede">Photos sent in by people who came out with us. No filters, no drone crew, mostly taken on a phone with cold hands.</p>
+        </div>
+
+        <ul class="mosaic reveal">
+          <li class="mosaic__cell mosaic__cell--wide">
+            <img src="https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?auto=format&amp;fit=crop&amp;w=900&amp;q=68"
+              width="900" height="600" loading="lazy" decoding="async"
+              alt="Sparks rising from a campfire burning after dark">
+          </li>
+          <li class="mosaic__cell">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&amp;fit=crop&amp;w=600&amp;q=68"
+              width="600" height="600" loading="lazy" decoding="async"
+              alt="A meteor crossing a purple star-filled sky above a dark mountain ridge">
+          </li>
+          <li class="mosaic__cell">
+            <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&amp;fit=crop&amp;w=600&amp;q=68"
+              width="600" height="600" loading="lazy" decoding="async"
+              alt="A wooden boardwalk running through dense green forest">
+          </li>
+          <li class="mosaic__cell mosaic__cell--tall">
+            <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&amp;fit=crop&amp;w=700&amp;q=68"
+              width="700" height="1000" loading="lazy" decoding="async"
+              alt="A lone figure reflected on a mirror-flat salt flat at sunset">
+          </li>
+          <li class="mosaic__cell">
+            <img src="https://images.unsplash.com/photo-1508163223045-1880bc36e222?auto=format&amp;fit=crop&amp;w=600&amp;q=68"
+              width="600" height="600" loading="lazy" decoding="async"
+              alt="Pink morning mist hanging over layered forest hills with birds overhead">
+          </li>
+          <li class="mosaic__cell">
+            <img src="https://images.unsplash.com/photo-1439853949127-fa647821eba0?auto=format&amp;fit=crop&amp;w=600&amp;q=68"
+              width="600" height="600" loading="lazy" decoding="async"
+              alt="A pale turquoise glacial lake held between steep grey mountains">
+          </li>
+          <li class="mosaic__cell mosaic__cell--wide">
+            <img src="https://images.unsplash.com/photo-1533692328991-08159ff19fca?auto=format&amp;fit=crop&amp;w=900&amp;q=68"
+              width="900" height="600" loading="lazy" decoding="async"
+              alt="A river winding through a deep forested gorge seen from above">
+          </li>
+          <li class="mosaic__cell">
+            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&amp;fit=crop&amp;w=600&amp;q=68"
+              width="600" height="600" loading="lazy" decoding="async"
+              alt="Low cloud breaking over empty green hills at first light">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── 6. Testimonials ───────────────────────────────────────────────── -->
+    <section class="section section--blush" id="stories" aria-labelledby="stories-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Crew stories</p>
+          <h2 class="section__title" id="stories-title">What people actually said after</h2>
         </div>
 
         <div class="carousel reveal" data-carousel>
-          <ul class="carousel__track" data-carousel-track tabindex="0" aria-label="Client testimonials">
+          <ul class="carousel__track" data-carousel-track tabindex="0" aria-label="Crew stories">
             <li class="testimonial" data-slide>
               <blockquote class="testimonial__quote">
-                <p>“We moved three sites onto a single network in one weekend and opened on Monday as normal. The plan was detailed enough that I could explain it to our board.”</p>
+                <p>“I booked on my own on a Wednesday and by Sunday I had a group chat that's still going. Nobody cared that I'd never climbed before.”</p>
               </blockquote>
               <footer class="testimonial__meta">
-                <span class="avatar" aria-hidden="true">HO</span>
+                <img class="avatar" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&amp;fit=facearea&amp;facepad=2.6&amp;w=120&amp;h=120&amp;q=70"
+                  width="60" height="60" loading="lazy" decoding="async" alt="Portrait of Priya Raman">
                 <span class="testimonial__who">
-                  <span class="testimonial__name">Helena Okonkwo</span>
-                  <span class="testimonial__role">Operations Director</span>
-                  <span class="testimonial__company">Calderfield Logistics</span>
+                  <span class="testimonial__name">Priya Raman</span>
+                  <span class="testimonial__role">Rock &amp; Rope, Peak District</span>
+                  <span class="testimonial__company">April</span>
                 </span>
               </footer>
             </li>
 
             <li class="testimonial" data-slide>
               <blockquote class="testimonial__quote">
-                <p>“Our old provider billed for every question. Meridian gave us one number, one invoice, and a security review we didn't have to chase them for.”</p>
+                <p>“The kit list was one page and it was right. I turned up with exactly what I needed, which has never once happened to me before.”</p>
               </blockquote>
               <footer class="testimonial__meta">
-                <span class="avatar" aria-hidden="true">DR</span>
+                <img class="avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&amp;fit=facearea&amp;facepad=2.6&amp;w=120&amp;h=120&amp;q=70"
+                  width="60" height="60" loading="lazy" decoding="async" alt="Portrait of Tom Osei">
                 <span class="testimonial__who">
-                  <span class="testimonial__name">Daniel Reyes</span>
-                  <span class="testimonial__role">Finance Manager</span>
-                  <span class="testimonial__company">Brightwell Care Group</span>
+                  <span class="testimonial__name">Tom Osei</span>
+                  <span class="testimonial__role">Wild Camping, Cairngorms</span>
+                  <span class="testimonial__company">June</span>
                 </span>
               </footer>
             </li>
 
             <li class="testimonial" data-slide>
               <blockquote class="testimonial__quote">
-                <p>“They found the misconfigured firewall rule two of our audits had missed, then wrote up the fix in plain English for our insurers.”</p>
+                <p>“Rain all Saturday and the guide just changed the route rather than cancelling. Best weekend I've had in about two years.”</p>
               </blockquote>
               <footer class="testimonial__meta">
-                <span class="avatar" aria-hidden="true">SM</span>
+                <img class="avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&amp;fit=facearea&amp;facepad=2.6&amp;w=120&amp;h=120&amp;q=70"
+                  width="60" height="60" loading="lazy" decoding="async" alt="Portrait of Erin Doyle">
                 <span class="testimonial__who">
-                  <span class="testimonial__name">Saoirse Milne</span>
-                  <span class="testimonial__role">Head of Technology</span>
-                  <span class="testimonial__company">Nortide Manufacturing</span>
+                  <span class="testimonial__name">Erin Doyle</span>
+                  <span class="testimonial__role">Ridge Hikes, Snowdonia</span>
+                  <span class="testimonial__company">November</span>
                 </span>
               </footer>
             </li>
           </ul>
 
           <div class="carousel__controls" data-carousel-controls>
-            <button class="carousel__arrow" type="button" data-carousel-prev aria-label="Previous testimonial">
+            <button class="carousel__arrow" type="button" data-carousel-prev aria-label="Previous story">
               <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
                 <path d="M14.5 5.5 8 12l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
             <!-- Dot buttons are generated by initCarousel() in script.js -->
-            <div class="carousel__dots" data-carousel-dots role="group" aria-label="Choose testimonial"></div>
-            <button class="carousel__arrow" type="button" data-carousel-next aria-label="Next testimonial">
+            <div class="carousel__dots" data-carousel-dots role="group" aria-label="Choose story"></div>
+            <button class="carousel__arrow" type="button" data-carousel-next aria-label="Next story">
               <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
                 <path d="M9.5 5.5 16 12l-6.5 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -217,22 +498,108 @@
       </div>
     </section>
 
-    <!-- ── 4. Enquiry form ───────────────────────────────────────────────── -->
+    <!-- ── 7. Lead magnet ────────────────────────────────────────────────── -->
+    <section class="section packlist" id="packlist" aria-labelledby="packlist-title">
+      <div class="container packlist__inner">
+        <div class="packlist__media reveal">
+          <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&amp;fit=crop&amp;w=800&amp;q=68"
+            width="800" height="1000" loading="lazy" decoding="async"
+            alt="Whitewashed coastal houses above a deep blue bay on a clear morning">
+          <p class="patch patch--seal" aria-hidden="true">
+            <span class="patch__top">Free</span>
+            <span class="patch__big">28</span>
+            <span class="patch__bot">items</span>
+          </p>
+        </div>
+
+        <div class="packlist__body reveal">
+          <p class="section__eyebrow">Free download</p>
+          <h2 class="section__title" id="packlist-title">The Weekend Pack List</h2>
+          <p class="section__lede">One page, 28 items, ordered by when you'll actually need them. The same list we send everyone who books — you can have it without booking anything.</p>
+
+          <ul class="checklist">
+            <li>What to bring for each of our six trip types</li>
+            <li>The four things people forget every single time</li>
+            <li>A 7 kg packing weight target that still covers wet weather</li>
+          </ul>
+
+          <form class="signup" id="packlist-form" method="post" novalidate>
+            <div class="field field--inline">
+              <label class="field__label" for="packlist-email">Email address</label>
+              <div class="signup__row">
+                <input class="field__input" id="packlist-email" name="packlistEmail" type="email" autocomplete="email" placeholder="you@example.com" required>
+                <button class="btn btn--primary signup__btn" type="submit" data-signup-submit>
+                  <span class="btn__label">Send me the list</span>
+                  <span class="spinner" aria-hidden="true"></span>
+                </button>
+              </div>
+              <p class="field__error" id="packlistEmail-error" role="alert"></p>
+            </div>
+
+            <!-- Honeypot: off-screen rather than display:none, because bots skip
+                 hidden inputs. -->
+            <div class="hp" aria-hidden="true">
+              <label for="packlist-website">Website</label>
+              <input id="packlist-website" name="packlistWebsite" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <p class="signup__status" id="packlist-status" role="status" aria-live="polite"></p>
+            <p class="form__note">One email with the list attached. No sequence, unsubscribe any time.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 8. FAQ ────────────────────────────────────────────────────────── -->
+    <section class="section section--sky" id="faq" aria-labelledby="faq-title">
+      <div class="container container--narrow">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Before you ask</p>
+          <h2 class="section__title" id="faq-title">The four questions we get most</h2>
+        </div>
+
+        <div class="faq reveal">
+          <details class="faq__item">
+            <summary class="faq__q">Do I need experience?</summary>
+            <p class="faq__a">No. Every trip is graded 1 to 5, and grades 1 and 2 assume you have never done the activity before. Your guide teaches the skills on the day, and nobody gets left behind on a ridge.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">What gear is included?</summary>
+            <p class="faq__a">All technical and safety kit: wetsuits, boards, ropes, harnesses, helmets, kayaks, buoyancy aids and group camping equipment. You bring clothes, boots and a sleeping bag — the pack list above covers it.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">Can I book on my own?</summary>
+            <p class="faq__a">Most people do. Around seven in ten of our bookings are solo, and trips cap at twelve so the group actually gets to know each other rather than splitting into cliques.</p>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__q">What if I need to cancel?</summary>
+            <p class="faq__a">Cancel up to 14 days before departure and you get a full refund, no questions asked. Inside 14 days you can move your place to another date or pass it to a friend.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 9. Enquiry form ───────────────────────────────────────────────── -->
     <section class="section" id="enquiry" aria-labelledby="enquiry-title">
       <div class="container enquiry">
         <div class="enquiry__intro reveal">
-          <p class="section__eyebrow">Get in touch</p>
-          <h2 class="section__title" id="enquiry-title">Book a free consultation</h2>
-          <p class="section__lede">Tell us what you're dealing with and we'll come back within one working day with an honest view — including when the answer is "you don't need us for this".</p>
+          <p class="section__eyebrow">Book a trip</p>
+          <h2 class="section__title" id="enquiry-title">Tell us when you're free</h2>
+          <p class="section__lede">Send this over and we'll come back within one working day with the dates that still have space, the total cost, and an honest word if we think a different trip suits you better.</p>
           <ul class="enquiry__points">
-            <li>A 45-minute call with an engineer, not a salesperson</li>
-            <li>A written summary of what we'd recommend</li>
-            <li>No obligation and no automated follow-up sequence</li>
+            <li>A real reply from the person who runs the trip</li>
+            <li>No deposit until you've picked a date</li>
+            <li>Happy to answer questions and never hear from you again</li>
           </ul>
         </div>
 
         <div class="enquiry__panel reveal">
-          <form class="form" id="enquiry-form" novalidate>
+          <noscript>
+            <p class="form__noscript">This form needs JavaScript to send. With it
+            off, email <a href="mailto:hey@wildcrew.example">hey@wildcrew.example</a>
+            or call <a href="tel:+442079460958">+44 20 7946 0958</a> instead.</p>
+          </noscript>
+          <form class="form" id="enquiry-form" method="post" novalidate>
             <div class="field">
               <label class="field__label" for="name">Full name</label>
               <input class="field__input" id="name" name="name" type="text" autocomplete="name" required>
@@ -240,7 +607,7 @@
             </div>
 
             <div class="field">
-              <label class="field__label" for="email">Work email</label>
+              <label class="field__label" for="email">Email</label>
               <input class="field__input" id="email" name="email" type="email" autocomplete="email" required>
               <p class="field__error" id="email-error" role="alert"></p>
             </div>
@@ -252,32 +619,34 @@
             </div>
 
             <div class="field">
-              <label class="field__label" for="company">Company <span class="field__optional">(optional)</span></label>
-              <input class="field__input" id="company" name="company" type="text" autocomplete="organization">
-              <p class="field__error" id="company-error" role="alert"></p>
+              <label class="field__label" for="groupsize">Group size <span class="field__optional">(optional)</span></label>
+              <input class="field__input" id="groupsize" name="groupsize" type="text" placeholder="Just me">
+              <p class="field__error" id="groupsize-error" role="alert"></p>
             </div>
 
             <div class="field field--full">
-              <label class="field__label" for="service">Which service do you need?</label>
-              <select class="field__input field__select" id="service" name="service" required>
-                <option value="" disabled selected>Select a service…</option>
-                <option value="managed-it-support">Managed IT Support</option>
-                <option value="cloud-migration">Cloud Migration</option>
-                <option value="cybersecurity">Cybersecurity</option>
-                <option value="network-infrastructure">Network Infrastructure</option>
-                <option value="other">Something else</option>
+              <label class="field__label" for="trip">Which trip?</label>
+              <select class="field__input field__select" id="trip" name="trip" required>
+                <option value="" disabled selected>Pick a trip…</option>
+                <option value="ridge-hikes">Ridge Hikes</option>
+                <option value="surf-weekends">Surf Weekends</option>
+                <option value="rock-and-rope">Rock &amp; Rope</option>
+                <option value="sea-kayaking">Sea Kayaking</option>
+                <option value="wild-camping">Wild Camping</option>
+                <option value="alpine-trekking">Alpine Trekking</option>
+                <option value="not-sure">Not sure yet</option>
               </select>
-              <p class="field__error" id="service-error" role="alert"></p>
+              <p class="field__error" id="trip-error" role="alert"></p>
             </div>
 
             <div class="field field--full">
-              <label class="field__label" for="message">How can we help?</label>
-              <textarea class="field__input field__textarea" id="message" name="message" rows="5" required></textarea>
+              <label class="field__label" for="message">When are you free, and anything we should know?</label>
+              <textarea class="field__input field__textarea" id="message" name="message" rows="5" placeholder="Any weekend in May really. I've hiked a bit but never with a group."></textarea>
               <p class="field__error" id="message-error" role="alert"></p>
             </div>
 
-            <!-- Honeypot: positioned off-screen rather than display:none, because
-                 many bots skip hidden inputs. Real users never see or tab to it. -->
+            <!-- Honeypot: off-screen rather than display:none, because many bots
+                 skip hidden inputs. Real users never see or tab to it. -->
             <div class="hp" aria-hidden="true">
               <label for="website">Website</label>
               <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
@@ -299,7 +668,7 @@
                 <path d="M5 12.8l4.3 4.2L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </span>
-            <h3 class="success__title">Thanks — we'll be in touch</h3>
+            <h3 class="success__title">Got it — see you out there</h3>
             <p class="success__text">Your enquiry is with us<span id="success-name"></span>. Expect a reply within one working day. If it's urgent, call <a href="tel:+442079460958">+44 20 7946 0958</a>.</p>
             <button class="link-btn" type="button" id="send-another">Send another enquiry</button>
           </div>
@@ -309,42 +678,44 @@
 
   </main>
 
-  <!-- ── 5. Footer ─────────────────────────────────────────────────────── -->
+  <!-- ── 10. Footer ────────────────────────────────────────────────────── -->
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
 
         <div class="footer__col footer__col--brand">
-          <a class="nav__logo footer__logo" href="#hero" aria-label="Meridian Systems — home">
+          <a class="nav__logo footer__logo" href="#hero" aria-label="Wildcrew — home">
             <svg class="nav__mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" focusable="false">
-              <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".35"/>
-              <path d="M16 2c5 4.2 7.5 9 7.5 14S21 26 16 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <path d="M16 2c-5 4.2-7.5 9-7.5 14S11 26 16 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".45"/>
-              <circle cx="16" cy="16" r="2.6" fill="currentColor"/>
+              <circle cx="16" cy="16" r="14.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="2.4 2.4" opacity=".45"/>
+              <path d="M6.5 21.5 12.2 12l3.9 5.6 2.6-3.7 6.8 7.6z" fill="currentColor"/>
+              <circle cx="21.6" cy="10.2" r="2.5" fill="currentColor" opacity=".55"/>
             </svg>
-            <span class="nav__wordmark">Meridian<span class="nav__wordmark-thin">Systems</span></span>
+            <span class="nav__wordmark">Wild<span class="nav__wordmark-thin">crew</span></span>
           </a>
-          <p class="footer__blurb">We're a 24-person IT services team working with organisations between 30 and 500 staff. Founded in 2011 and still independently owned.</p>
+          <p class="footer__blurb">Nine guides running small-group weekends out of Sheffield since 2019. Every trip caps at twelve people, because thirteen is a coach tour.</p>
           <!-- Placeholder hrefs — replace with real profile URLs before launch. -->
           <ul class="socials">
             <li>
-              <a href="#" aria-label="Meridian Systems on LinkedIn" rel="noopener noreferrer">
+              <a href="#" aria-label="Wildcrew on Instagram" rel="noopener noreferrer">
                 <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
-                  <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.2h4v11.3H3V9.2Zm6.5 0h3.83v1.55h.05a4.2 4.2 0 0 1 3.78-2.08c4.04 0 4.79 2.66 4.79 6.12v5.71h-4v-5.06c0-1.21-.02-2.76-1.68-2.76-1.69 0-1.94 1.32-1.94 2.67v5.15H9.5V9.2Z" fill="currentColor"/>
+                  <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.9"/>
+                  <circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.9"/>
+                  <circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" aria-label="Meridian Systems on X" rel="noopener noreferrer">
+              <a href="#" aria-label="Wildcrew on TikTok" rel="noopener noreferrer">
                 <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
-                  <path d="M17.53 3h3.2l-7 8 7.27 10h-5.1l-4-5.5L7.2 21H4l7.3-8.35L4.3 3h5.2l3.72 5.13L17.53 3Zm-1.13 16h1.77L7.7 4.9H5.8L16.4 19Z" fill="currentColor"/>
+                  <path d="M13.4 3h2.7a5.1 5.1 0 0 0 4.6 4.4v2.7a7.8 7.8 0 0 1-4.6-1.6v6.1a5.9 5.9 0 1 1-5.9-5.9c.3 0 .6 0 .9.1v2.8a3.1 3.1 0 1 0 2.3 3V3Z" fill="currentColor"/>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" aria-label="Meridian Systems on GitHub" rel="noopener noreferrer">
+              <a href="#" aria-label="Wildcrew on Strava" rel="noopener noreferrer">
                 <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
-                  <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03a9.5 9.5 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.86v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" fill="currentColor"/>
+                  <path d="M9.6 2 3.8 13.4h3.4L9.6 8.6l2.4 4.8h3.4L9.6 2Z" fill="currentColor"/>
+                  <path d="M15.4 13.4 13.7 16.7 12 13.4H9.4l4.3 8.6 4.3-8.6h-2.6Z" fill="currentColor" opacity=".6"/>
                 </svg>
               </a>
             </li>
@@ -355,43 +726,46 @@
           <h2 class="footer__title" id="footer-links-title">Quick links</h2>
           <ul class="footer__list">
             <li><a href="#hero">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#testimonials">Client stories</a></li>
-            <li><a href="#enquiry">Contact us</a></li>
+            <li><a href="#trips">All trips</a></li>
+            <li><a href="#how">How it works</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#faq">Questions</a></li>
           </ul>
         </nav>
 
-        <nav class="footer__col" aria-labelledby="footer-services-title">
-          <h2 class="footer__title" id="footer-services-title">Services</h2>
+        <nav class="footer__col" aria-labelledby="footer-trips-title">
+          <h2 class="footer__title" id="footer-trips-title">Trips</h2>
           <ul class="footer__list">
-            <li><a href="#services">Managed IT Support</a></li>
-            <li><a href="#services">Cloud Migration</a></li>
-            <li><a href="#services">Cybersecurity</a></li>
-            <li><a href="#services">Network Infrastructure</a></li>
+            <li><a href="#trips">Ridge Hikes</a></li>
+            <li><a href="#trips">Surf Weekends</a></li>
+            <li><a href="#trips">Rock &amp; Rope</a></li>
+            <li><a href="#trips">Sea Kayaking</a></li>
+            <li><a href="#trips">Wild Camping</a></li>
+            <li><a href="#trips">Alpine Trekking</a></li>
           </ul>
         </nav>
 
         <div class="footer__col">
           <h2 class="footer__title" id="footer-contact-title">Contact</h2>
           <address class="footer__address">
-            Meridian Systems Ltd<br>
-            18 Calder Wharf, Unit 4<br>
-            Leeds LS10 1PZ<br>
+            Wildcrew Adventures Ltd<br>
+            Unit 7, Bridgewater Yard<br>
+            Sheffield S1 2GU<br>
             United Kingdom
           </address>
           <ul class="footer__list footer__list--contact">
             <li><a href="tel:+442079460958">+44 20 7946 0958</a></li>
-            <li><a href="mailto:hello@meridiansystems.example">hello@meridiansystems.example</a></li>
+            <li><a href="mailto:hey@wildcrew.example">hey@wildcrew.example</a></li>
           </ul>
         </div>
 
       </div>
 
       <div class="footer__bar">
-        <p class="footer__copy">&copy; <span id="year">2026</span> Meridian Systems Ltd. All rights reserved.</p>
+        <p class="footer__copy">&copy; <span id="year">2026</span> Wildcrew Adventures Ltd. Photography via <a href="https://unsplash.com/license" rel="noopener noreferrer">Unsplash</a>.</p>
         <ul class="footer__legal">
           <li><a href="#">Privacy policy</a></li>
-          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">Booking terms</a></li>
         </ul>
       </div>
     </div>

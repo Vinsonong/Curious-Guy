@@ -3,3 +3,9 @@
 .Spotlight-V100
 .Trashes
 icloud/
+
+# Claude Code local tooling — not site content
+.agents/
+.claude/
+.mcp.json
+skills-lock.json
