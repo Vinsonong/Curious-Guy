@@ -1,0 +1,53 @@
+name: Deploy to GitHub Pages
+
+# Publishes the static site on every push to main, plus on demand from the
+# Actions tab. There is no build step — the site is plain HTML/CSS/JS, so the
+# repository contents are uploaded as-is.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Least privilege: read the repo, and mint the OIDC token deploy-pages needs.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deploy finish rather than cancelling it, so a half-published
+# site is never left live.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          # Best effort: turns Pages on with the "GitHub Actions" source if it
+          # is not already enabled, so the repo settings toggle is not needed.
+          # If this step errors, set Settings > Pages > Source to "GitHub
+          # Actions" by hand and re-run the workflow.
+          enablement: true
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Whole repo. index.html is at the root, so this serves correctly.
+          # To publish only the site files, stage them into a directory first
+          # and point this at that directory instead.
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
