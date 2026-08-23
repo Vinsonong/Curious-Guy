@@ -594,6 +594,60 @@
   }
 
   /* ========================================================================
+     WhatsApp chat widget
+     ======================================================================== */
+
+  /* Floating disclosure panel, following the same pattern as initNav(): the
+     toggle button's aria-expanded and label stay in sync with a hidden panel.
+     Every link inside is a plain wa.me URL — there's nothing to submit or
+     fetch, so this only ever needs to open, close, and get out of the way. */
+  function initChatWidget() {
+    const root = document.querySelector('[data-chatwidget]');
+    const toggle = root && root.querySelector('[data-chatwidget-toggle]');
+    const closeBtn = root && root.querySelector('[data-chatwidget-close]');
+    const panel = document.getElementById('chatwidget-panel');
+    if (!root || !toggle || !panel) return;
+
+    const setOpen = (open) => {
+      panel.hidden = !open;
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Close chat' : 'Chat with Wildcrew on WhatsApp');
+      if (open) {
+        const firstLink = panel.querySelector('a, button');
+        if (firstLink) firstLink.focus();
+      }
+    };
+
+    toggle.addEventListener('click', () => {
+      setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+    });
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => {
+        setOpen(false);
+        toggle.focus();
+      });
+    }
+
+    /* Escape closes the panel and returns focus to the button that opened
+       it, matching the mobile nav's Escape handling. */
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+
+    /* A click anywhere outside the widget closes it — expected behaviour for
+       a floating overlay that sits on top of page content. */
+    document.addEventListener('click', (e) => {
+      if (toggle.getAttribute('aria-expanded') === 'true' && !root.contains(e.target)) {
+        setOpen(false);
+      }
+    });
+  }
+
+  /* ========================================================================
      Boot
      ======================================================================== */
 
@@ -607,6 +661,7 @@
     initCarousel();
     initSignup();
     initForm();
+    initChatWidget();
   }
 
   if (document.readyState === 'loading') {

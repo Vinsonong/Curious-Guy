@@ -776,6 +776,78 @@
     </div>
   </footer>
 
+  <!-- ── Floating WhatsApp widget ──────────────────────────────────────── -->
+  <div class="chatwidget" data-chatwidget>
+    <div class="chatwidget__panel" id="chatwidget-panel" hidden>
+      <div class="chatwidget__head">
+        <span class="chatwidget__badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" focusable="false">
+            <path d="M4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8c-1.1 0-2.1-.2-3-.6L4 20l1.1-4.4C4.4 14.5 4 13.3 4 12Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="9" cy="12" r="1.1" fill="currentColor"/>
+            <circle cx="12" cy="12" r="1.1" fill="currentColor"/>
+            <circle cx="15" cy="12" r="1.1" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="chatwidget__who">
+          <span class="chatwidget__title">Wildcrew</span>
+          <span class="chatwidget__status">Usually replies within a day</span>
+        </span>
+        <button class="chatwidget__close" type="button" data-chatwidget-close aria-label="Close chat">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="chatwidget__body">
+        <p class="chatwidget__bubble">Hey 👋 what can we help with?</p>
+
+        <ul class="chatwidget__suggestions">
+          <li>
+            <a class="chatwidget__chip" href="https://wa.me/6589444310?text=Hi!%20I'm%20not%20sure%20which%20trip%20suits%20a%20first-timer.%20Any%20recommendations%3F" rel="noopener noreferrer">
+              <span>Which trip suits a first-timer?</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M9.5 5.5 16 12l-6.5 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </li>
+          <li>
+            <a class="chatwidget__chip" href="https://wa.me/6589444310?text=Hi!%20Do%20you%20have%20space%20on%20a%20trip%20in%20the%20next%20few%20weeks%3F" rel="noopener noreferrer">
+              <span>Do you have space soon?</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M9.5 5.5 16 12l-6.5 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </li>
+          <li>
+            <a class="chatwidget__chip" href="https://wa.me/6589444310?text=Hi!%20What's%20included%20in%20the%20price%2C%20and%20what%20should%20I%20bring%3F" rel="noopener noreferrer">
+              <span>What's included in the price?</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M9.5 5.5 16 12l-6.5 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </li>
+          <li>
+            <a class="chatwidget__chip" href="https://wa.me/6589444310?text=Hi!%20I'm%20booking%20for%20a%20small%20group%20of%20friends.%20Can%20you%20help%3F" rel="noopener noreferrer">
+              <span>Booking for a group of friends</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M9.5 5.5 16 12l-6.5 6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="chatwidget__foot">
+        <a class="btn btn--primary chatwidget__cta" href="https://wa.me/6589444310?text=Hi!%20I've%20got%20a%20question%20about%20booking%20a%20Wildcrew%20trip." rel="noopener noreferrer">
+          Start a WhatsApp chat
+        </a>
+      </div>
+    </div>
+
+    <button class="chatwidget__fab" type="button" data-chatwidget-toggle aria-expanded="false" aria-controls="chatwidget-panel" aria-label="Chat with Wildcrew on WhatsApp">
+      <span class="chatwidget__ping" aria-hidden="true"></span>
+      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false">
+        <path d="M4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8c-1.1 0-2.1-.2-3-.6L4 20l1.1-4.4C4.4 14.5 4 13.3 4 12Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="9" cy="12" r="1.1" fill="currentColor"/>
+        <circle cx="12" cy="12" r="1.1" fill="currentColor"/>
+        <circle cx="15" cy="12" r="1.1" fill="currentColor"/>
+      </svg>
+    </button>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
