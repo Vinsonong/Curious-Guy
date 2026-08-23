@@ -18,7 +18,8 @@ Wildcrew runs guided hiking, surf, climbing, kayaking and wild camping
 weekends across the UK and Europe — twelve people max, gear included, no
 experience needed. This repo is the marketing site: a hero, a trust ticker,
 six trip cards, a three-step "how it works", a photo gallery, a testimonial
-carousel, a free pack-list lead magnet, an FAQ, and a booking enquiry form.
+carousel, a free pack-list lead magnet, an FAQ, a booking enquiry form, and a
+floating WhatsApp chat widget.
 
 Notable features:
 
@@ -36,6 +37,10 @@ Notable features:
 - **Two client-side-validated forms** (booking enquiry + pack-list signup)
   sharing one validation engine, with honeypot spam traps, inline error
   messages, and distinct success/error/timeout states — the page never reloads
+- **Floating WhatsApp widget** — a disclosure panel (same open/close pattern
+  as the mobile nav) with four pre-filled suggested queries and a general CTA,
+  styled entirely from the site's own design tokens rather than WhatsApp's
+  branding
 - **Image-load fallback** — every photo is hotlinked from Unsplash; a failed
   load degrades to a pastel placeholder block instead of a broken-image icon
 - **SEO/sharing metadata** — Open Graph/Twitter card tags, JSON-LD structured
