@@ -10,7 +10,7 @@ A single-page marketing site for a fictional small-group outdoor adventure compa
 
 ## Live demo
 
-**[vinsonong.github.io/Serious-Guy](https://vinsonong.github.io/Serious-Guy/)**
+**[vinsonong.github.io/Curious-Guy](https://vinsonong.github.io/Curious-Guy/)**
 
 ## About the project
 
@@ -72,8 +72,8 @@ Deployed via **GitHub Actions** to **GitHub Pages** on every push to `main`.
 Nothing to install and no build step.
 
 ```bash
-git clone https://github.com/Vinsonong/Serious-Guy.git
-cd Serious-Guy
+git clone https://github.com/Vinsonong/Curious-Guy.git
+cd Curious-Guy
 open index.html          # macOS — opens directly over file://
 ```
 

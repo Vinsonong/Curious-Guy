@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vinsonong.github.io/Serious-Guy/sitemap.xml
+Sitemap: https://vinsonong.github.io/Curious-Guy/sitemap.xml
