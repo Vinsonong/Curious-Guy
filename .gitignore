@@ -6,6 +6,7 @@ icloud/
 
 # Claude Code local tooling — not site content
 .agents/
-.claude/
+.claude/*
+!.claude/settings.json
 .mcp.json
 skills-lock.json
